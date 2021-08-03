@@ -1,0 +1,104 @@
+body{
+    background-color: rgb(64, 158, 187);
+  }
+
+
+  }
+  
+  .plot-content {
+      margin-top: 30px;
+      margin-bottom: 60px;
+      padding: 10px 30px 5px;
+      color: rgb(231, 236, 241);
+      background-color: rgb(54, 52, 52);
+  }
+  
+  
+  
+  .visplot-content {
+      margin-top: 30px;
+      margin-bottom: 60px;
+      padding: 10px 30px 40px;
+      color: rgb(231, 236, 241);
+      background-color: rgb(54, 52, 52);
+  }
+  
+  .compplot-content {
+      margin-top: 30px;
+      margin-bottom: 60px;
+      margin-right: 40px;
+      margin-left: 40px;
+      padding: 10px 30px 40px;
+      color: rgb(231, 236, 241);
+      background-color: rgb(54, 52, 52);
+  }
+  .plot-header {
+      padding-top: 15px; 
+      padding-left: 4px;
+      color: rgb(213, 240, 243);
+      font-size: 26px;
+      font-weight: bold;
+      font-family: Georgia, Times, "Times New Roman", serif;
+  }
+  
+    
+  #landing-image {
+      float: left;
+      width: 50%;
+      height: 50%;
+    }
+  
+    #other-image {
+      width: 100%;
+      height: 100%;
+    }
+  
+  #vis-image {
+      float: left;
+      width: 100%;
+      height: 100%;
+  }
+  
+  #comp-image {
+      float: left;
+      width: 90%;
+      height: 90%;
+  }
+  .table1{
+      text-align: center;
+  }
+  
+  
+  .tablehead {
+      word-wrap: normal;
+  }
+  
+  .table-content {
+      margin: 30px 10px 10px 10px;
+      border: 10px 10px 10px 10px;
+      padding: 10px 10px 10px 10px;
+      color: rgb(239, 248, 248);
+      background-color: rgb(6, 59, 59);
+  }
+ 
+  
+  tr:nth-child(odd) {
+      background-color: #56a598;
+    }
+  .comp-title {
+      padding:  10px 0px 0px 0px;
+      text-align: center;
+      margin-bottom: 0px;
+      color: rgb(153, 234, 245);
+      font-size: 20px;
+      font-weight: bold;
+      font-family: Georgia, Times, "Times New Roman", serif;
+  }
+  
+  @media screen and (max-width: 600px) {
+      .topnav.responsive {position: relative;}
+      .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }

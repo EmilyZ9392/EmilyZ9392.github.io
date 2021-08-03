@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html lang='en-us'>
+
+<head>
+    <meta charset='UTF-8'>
+    <title> Weather Analysis: Impact of Latitude on Various Weather Conditions</title>
+    
+    <!-- Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+
+    <!-- Navbar & dropdown-->
+        <nav class='navbar navbar-expand-lg navbar-dark bg-dark'>
+            <a class='navbar-brand d-inline p-2 ml-5 bg-info text-white mb-0' href='index.html'>Weather Analysis Home</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Plots
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="./temp.html">Temperature</a>
+                          <a class="dropdown-item" href="./humidity.html">Humidity</a>
+                          <a class="dropdown-item" href="./cloudiness.html">Cloudiness</a>
+                          <a class="dropdown-item" href="./wind.html">Wind Speed</a>
+                        </div>
+                      </li>
+                                
+                        <li class="nav-item">
+                        <a class="nav-link" href="./comparison.html">Comparison <span class="sr-only"></span></a>
+                        </li>
+                                
+                      <li class="nav-item">
+                        <a class="nav-link" href="./data.html">Data</a>
+                      </li>
+            
+                    </ul>
+                                
+                  </div>
+                </nav>
+                   
+                
+        <!-- Initiate a container for LandingPage, then rows and columns-->
+<h1>Weather Analysis: Impact of Latitude on Various Weather Conditions</h1><br>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12">
+            <p>Using data from OpenWeatherMap API on weather conditions for over 500 cities, we were able to analyze how distance from the equator affects various weather conditions. </p>
+            <p>Once we had this data, we used Matplotlib to visualize our findings for Cloudiness, Temperature, Humidity, and Wind Speed. 
+            </p>
+            <p> This site houses all of the data used to conduct our analysis, as well as the visualizations created with the data. It also provides explanations of the trends/correlations that we observed.</p>
+        </div>
+    </div><br>
+
+    <div class="row">
+        <div class="col-xl-3 col-md-6">
+        <img id="a1" src="Resources/assets/images/Fig1.png"
+                        height=200px
+                        />
+        </div>
+        <div class="col-xl-3 col-md-6">
+        <img id="a1" src="Resources/assets/images/Fig2.png"
+                        height=200px 
+                        />
+        </div>
+        <div class="col-xl-3 col-md-6">
+        <img id="a1" src="Resources/assets/images/Fig3.png"
+                        height=200px
+                        />
+        </div>  
+        <div class="col-xl-3 col-md-6">
+        <img id="a1" src="Resources/assets/images/Fig4.png"
+                        height=200px
+                        />
+        </div>
+    </div><br>
+
+    <!--Inserting buttons to forward user to larger images-->
+<p> Use the buttons below to view larger versions of the graphs.</p>
+    <div class="row">
+        <div class="col-xl-3 col-md-6">
+            <form id="a2" method="get" action="Resources/assets/images/Fig1.png">
+                <button type="submit">Temperature</button></form>
+        </div>
+        
+        <div class="col-xl-3 col-md-6">
+            <form id="a2" method="get" action="Resources/assets/images/Fig2.png">
+                <button type="submit">Humidity</button></form> 
+        </div>
+
+        <div class="col-xl-3 col-md-6">
+            <form id="a2" method="get" action="Resources/assets/images/Fig3.png">
+                <button type="submit">Cloudiness</button></form> 
+        </div> 
+        
+        <div class="col-xl-3 col-md-6">
+            <form id="a2" method="get" action="Resources/assets/images/Fig4.png">
+                <button type="submit">Wind Speed</button></form> 
+        </div>
+
+    </div><br><br>
+
+
+</body>
+</html>
